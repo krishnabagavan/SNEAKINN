@@ -1,4 +1,4 @@
-// server.js
+
 import express from "express";
 import cors from "cors";
 import mongoose from "mongoose";
@@ -10,7 +10,7 @@ const PORT = 5000;
 app.use(cors());
 app.use(express.json());
 
-// Connect MongoDB
+
 mongoose
   .connect("mongodb://localhost:27017/yourdbname", {
     useNewUrlParser: true,
